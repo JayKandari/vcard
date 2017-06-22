@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_help().
+ */
+function vcard_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.vcard':
+      return '<p>' . t('Provides a custom vCard field.', array()) . '</p>';
+  }
+}

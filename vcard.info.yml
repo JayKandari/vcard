@@ -1,0 +1,4 @@
+name: vCard
+core: 8.x
+type: module
+description: Provides a vCard custom field.
