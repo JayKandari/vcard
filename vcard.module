@@ -9,3 +9,14 @@ function vcard_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route
       return '<p>' . t('Provides a custom vCard field.', array()) . '</p>';
   }
 }
+
+/**
+ * Implements hook_theme().
+ */
+function vcard_theme() {
+  $themes = [];
+  $themes['styleone'] = [
+    'variables' => ['contact' => NULL],
+  ];
+  return $themes;
+}

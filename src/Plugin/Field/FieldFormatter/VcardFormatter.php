@@ -27,7 +27,9 @@ class VcardFormatter extends FormatterBase {
 
     foreach ($items as $delta => $item) {
       $elements[$delta] = [
-        '#markup' => '<h1>Items value is - </h1><u>' . $item->value . '</u>',
+        '#theme' => 'styleone',
+        '#contact' => ['title' => 'abracadabra'],
+        // '#markup' => '<h1>Items value is - </h1><u>' . $item->value . '</u>',
       ];
     }
 
