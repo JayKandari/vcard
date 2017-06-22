@@ -14,7 +14,7 @@ use Drupal\Core\Form\FormStateInterface;
  *   module = "vcard",
  *   label = @Translation("Simple vcard formatter"),
  *   field_types = {
- *     "text_with_summary"
+ *     "vcard"
  *   }
  * )
  */
@@ -30,7 +30,7 @@ class VcardFormatter extends FormatterBase {
       $selected_theme = $this->getSetting('theme');
       $elements[$delta] = [
         '#theme' => $selected_theme,
-        '#contact' => ['title' => 'abracadabra'],
+        '#contact' => $item,
         // '#markup' => '<h1>Items value is - </h1><u>' . $item->value . '</u>',
       ];
     }
