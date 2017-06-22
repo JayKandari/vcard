@@ -1,0 +1,19 @@
+.vcard {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.vcard.theme_default {
+  background: mediumvioletred;
+  color: #eee;
+  font-family: cursive;
+}
+
+
+.vcard.theme_email_signature {
+  background: wheat;
+  border: 1px solid maroon;
+}

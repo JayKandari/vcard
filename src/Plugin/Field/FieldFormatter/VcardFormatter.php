@@ -31,7 +31,7 @@ class VcardFormatter extends FormatterBase {
       $elements[$delta] = [
         '#theme' => $selected_theme,
         '#contact' => $item,
-        // '#markup' => '<h1>Items value is - </h1><u>' . $item->value . '</u>',
+        '#attached' => ['library' => 'vcard/vcard.cardassets'],
       ];
     }
 
