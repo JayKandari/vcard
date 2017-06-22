@@ -15,7 +15,10 @@ function vcard_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route
  */
 function vcard_theme() {
   $themes = [];
-  $themes['styleone'] = [
+  $themes['default_vcard'] = [
+    'variables' => ['contact' => NULL],
+  ];
+  $themes['email_signature'] = [
     'variables' => ['contact' => NULL],
   ];
   return $themes;
